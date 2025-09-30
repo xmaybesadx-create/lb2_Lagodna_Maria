@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Початок роботи з HTML</title>
+</head>
+<body>
+    <h1>Початок роботи з HTML</h1>
+
+    <h2>Що таке HTML?</h2>
+    <p>HTML (HyperText Markup Language – мова гіпертекстової розмітки) не є мовою програмування – це мова розмітки, яка використовується для визначення структури веб-сторінок, які відвідують користувачі. Вони можуть мати складну чи просту структуру, все залежить від задуму та бажання веб-розробника. HTML складається з ряду елементів, які ви використовуєте для того, щоб охопити, обернути або розмітити різні частини вмісту, щоб він мав певний вигляд або спрацьовував певним способом.</p>
+
+    <p>Вбудовані теги можуть перетворити частину вмісту на гіперпосилання, за якою можна перейти на іншу веб-сторінку, виділити курсивом слова і так далі. Наприклад:</p>
+
+    <pre><code>My cat is very grumpy</code></pre>
+    <p>Як абзац:</p>
+    <pre><code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code></pre>
+
+    <p><strong>Примітка.</strong> Теги HTML нечутливі до регістру... Найкращою практикою є запис у нижньому регістрі.</p>
+
+    <h2>Структура HTML-елементів</h2>
+    <p>Основними частинами елемента є:</p>
+    <ul>
+        <li>Відкриваючий тег</li>
+        <li>Закриваючий тег</li>
+        <li>Вміст</li>
+        <li>Елемент</li>
+    </ul>
+
+    <h3>Вкладені елементи</h3>
+    <p>Приклад правильного вкладення:</p>
+    <pre><code>&lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;</code></pre>
+
+    <p>Приклад неправильного:</p>
+    <pre><code>&lt;p&gt;My cat is &lt;strong&gt;very grumpy.&lt;/p&gt;&lt;/strong&gt;</code></pre>
+
+    <h3>Порожні (void) елементи</h3>
+    <p>Приклад:</p>
+    <pre><code>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;</code></pre>
+
+    <p><strong>Примітка.</strong> У HTML можна (але не обов’язково) закривати пусті теги: <code>&lt;img ... /&gt;</code></p>
+
+    <h2>Атрибути</h2>
+    <p>Атрибути містять додаткову інформацію про елемент...</p>
+
+    <ul>
+        <li><code>href</code> – веб-адреса посилання</li>
+        <li><code>title</code> – текст підказки</li>
+        <li><code>target</code> – де відкривається посилання</li>
+    </ul>
+
+    <h3>Бульові атрибути</h3>
+    <pre><code>&lt;input type="text" disabled="disabled"&gt;
+&lt;input type="text" disabled&gt;
+&lt;input type="text"&gt;</code></pre>
+
+    <h3>Опускання лапок</h3>
+    <pre><code>&lt;a href=https://www.mozilla.org/&gt;favorite website&lt;/a&gt;</code></pre>
+    <pre><code>&lt;a href=https://www.mozilla.org/ title=The Mozilla homepage&gt;favorite website&lt;/a&gt;</code></pre>
+
+    <p>Порада: завжди використовуйте лапки для атрибутів.</p>
+
+    <h2>Структура HTML документа</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;My test page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;This is my page&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <p><strong>Пояснення:</strong> &lt;!DOCTYPE html&gt; ... &lt;body&gt; – містить увесь видимий вміст.</p>
+
+    <h3>Пробіли в HTML</h3>
+    <pre><code>&lt;p&gt;Cats are silly.&lt;/p&gt;
+&lt;p&gt;Cats        are
+         silly.&lt;/p&gt;</code></pre>
+
+    <p>Браузер скорочує кілька пробілів до одного. Форматування робить код читабельним.</p>
+
+    <h2>Спеціальні символи HTML (Entity)</h2>
+    <p>Наприклад:</p>
+    <pre><code>&lt;p&gt;In HTML, you define a paragraph using the &lt;p&gt; element.&lt;/p&gt;</code></pre>
+
+    <p><strong>Примітка.</strong> Для &lt;, &gt;, &amp; використовуйте коди: <code>&amp;lt;</code>, <code>&amp;gt;</code>, <code>&amp;amp;</code> тощо.</p>
+
+    <h2>HTML коментарі</h2>
+    <p>Приклад:</p>
+    <pre><code>&lt;p&gt;I'm not inside a comment&lt;/p&gt;
+&lt;!-- &lt;p&gt;I am!&lt;/p&gt; --&gt;</code></pre>
+</body>
+</html>
